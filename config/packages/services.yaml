@@ -1,0 +1,5 @@
+services:
+  App\Service\PostNotification:
+    arguments:
+      $mailer: '@Symfony\Component\Mailer\MailerInterface'
+    public: true
